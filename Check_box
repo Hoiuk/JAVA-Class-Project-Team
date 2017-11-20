@@ -1,0 +1,64 @@
+package Project;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Checkbox;
+import java.awt.Choice;
+import java.awt.TextField;
+import javax.swing.JMenuBar;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JRadioButtonMenuItem;
+
+public class Meeting extends JFrame {
+   private JPanel contentPane;
+   /**    
+   * Launch the application.    
+   */   
+   public static void main(String[] args) {     
+    EventQueue.invokeLater(new Runnable() {         
+      public void run() {           
+        try {              
+          Meeting frame = new Meeting();               
+          frame.setVisible(true);            
+        } catch (Exception e) {               
+           e.printStackTrace();           
+        }        
+       }      
+    });   
+  }
+  /**    
+  * Create the frame.    
+  */   
+   public Meeting() {      
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);      
+    setBounds(100, 100, 450, 300);      
+    contentPane = new JPanel();      
+    contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));      
+    setContentPane(contentPane);      
+    contentPane.setLayout(null);      
+            
+    Choice choice = new Choice();      
+    choice.setBounds(189, 33, 90, 21);      
+    contentPane.add(choice);            
+            
+    Checkbox checkbox = new Checkbox("10:00");      
+    checkbox.setBounds(25, 33, 101, 23);      
+    contentPane.add(checkbox);           
+            
+    Checkbox checkbox_1 = new Checkbox("11:00");     
+    checkbox_1.setBounds(25, 67, 101, 23);     
+    contentPane.add(checkbox_1);            
+  
+    Checkbox checkbox_2 = new Checkbox("12:00");      
+    checkbox_2.setBounds(25, 102, 101, 23);      
+    contentPane.add(checkbox_2);            
+    
+    Checkbox checkbox_3 = new Checkbox("13:00");      
+    checkbox_3.setBounds(25, 139, 101, 23);     
+    contentPane.add(checkbox_3);   
+  }
+}
