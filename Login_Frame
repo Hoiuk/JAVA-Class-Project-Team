@@ -1,0 +1,126 @@
+package Login;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+import java.awt.Graphics;
+import java.awt.Image;
+import java.awt.Color;
+import java.awt.event.*;
+
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import javax.swing.DropMode;
+import java.awt.Font;
+import javax.swing.JMenuBar;
+import java.awt.ScrollPane;
+import javax.swing.UIManager;
+import java.awt.SystemColor;
+
+
+
+public class Login_Frame extends JFrame {
+
+   private JPanel contentPane;
+   private JTextField textField;
+   private JPasswordField passwordField;
+
+//   private Image screenImage;
+//   private Graphics screenGraphic;
+   
+//   introBackground = new ImageIcon(Main.class.getResource("../images/test.jpg")).getImage();
+   
+   
+   
+   /**
+    * Launch the application.
+    */
+   public static void main(String[] args) {
+      EventQueue.invokeLater(new Runnable() {
+         public void run() {
+            try {
+               Login_Frame frame = new Login_Frame();
+               frame.setVisible(true);
+            } catch (Exception e) {
+               e.printStackTrace();
+            }
+         }
+      });
+   }
+
+   /**
+    * Create the frame.
+    */
+   public Login_Frame() {
+      
+      
+      
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setBounds(100, 100, 1520, 920);
+      contentPane = new JPanel();
+      contentPane.setBackground(new Color(255, 255, 255));
+      contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+      setContentPane(contentPane);
+      contentPane.setLayout(null);
+
+      JLabel lblNewLabel = new JLabel("ID");
+      lblNewLabel.setBounds(669, 225, 57, 33);
+      lblNewLabel.setFont(new Font("맑은 고딕", Font.PLAIN, 20));
+      lblNewLabel.setForeground(Color.BLACK);
+      contentPane.add(lblNewLabel);
+      
+      JLabel lblNewLabel_1 = new JLabel("PW");
+      lblNewLabel_1.setBounds(669, 265, 57, 40);
+      lblNewLabel_1.setFont(new Font("맑은 고딕", Font.PLAIN, 20));
+      lblNewLabel_1.setForeground(Color.BLACK);
+      contentPane.add(lblNewLabel_1);
+      
+      textField = new JTextField();
+      textField.setBounds(709, 230, 179, 30);
+      textField.setFont(new Font("휴먼옛체", Font.PLAIN, 20));
+      textField.setForeground(Color.BLACK);
+      contentPane.add(textField);      
+      textField.setColumns(10);
+      textField.setOpaque(false);
+      
+      passwordField = new JPasswordField();
+      passwordField.setBounds(709, 270, 179, 30);
+      passwordField.setFont(new Font("굴림", Font.PLAIN, 20));
+      passwordField.setForeground(Color.BLACK);
+      contentPane.add(passwordField);
+      passwordField.setOpaque(false);
+      
+      JButton btnNewButton = new JButton("\uB85C\uADF8\uC778");
+      btnNewButton.setBounds(735, 320, 120, 28);
+      contentPane.add(btnNewButton);
+       
+      JButton btnNewButton_1 = new JButton("ID/PW \uCC3E\uAE30");
+      btnNewButton_1.setBounds(669, 363, 120, 28);
+      btnNewButton_1.setForeground(new Color(0, 0, 0));
+      btnNewButton_1.setBackground(UIManager.getColor("Button.background"));
+      contentPane.add(btnNewButton_1);
+      
+      JButton button = new JButton("\uD68C\uC6D0\uAC00\uC785");
+      button.setBounds(802, 363, 120, 28);
+      contentPane.add(button);
+      
+      JLabel label = new JLabel("");
+      label.setBounds(478, 414, 735, 458);
+      label.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Main.JPG"));
+      contentPane.add(label);
+      
+      JLabel label_1 = new JLabel("");
+      label_1.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\UTalk.JPG"));
+      label_1.setBounds(566, 31, 571, 177);
+      contentPane.add(label_1);
+   }
+}
