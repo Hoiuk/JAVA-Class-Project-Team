@@ -72,14 +72,14 @@ public class Login_Frame extends JFrame {
       setContentPane(contentPane);
       contentPane.setLayout(null);
 
-      JLabel lblNewLabel = new JLabel("ID");
-      lblNewLabel.setBounds(669, 225, 57, 33);
+      JLabel lblNewLabel = new JLabel("\uD559\uBC88");
+      lblNewLabel.setBounds(656, 227, 57, 33);
       lblNewLabel.setFont(new Font("맑은 고딕", Font.PLAIN, 20));
       lblNewLabel.setForeground(Color.BLACK);
       contentPane.add(lblNewLabel);
       
       JLabel lblNewLabel_1 = new JLabel("PW");
-      lblNewLabel_1.setBounds(669, 265, 57, 40);
+      lblNewLabel_1.setBounds(659, 263, 57, 40);
       lblNewLabel_1.setFont(new Font("맑은 고딕", Font.PLAIN, 20));
       lblNewLabel_1.setForeground(Color.BLACK);
       contentPane.add(lblNewLabel_1);
@@ -103,7 +103,7 @@ public class Login_Frame extends JFrame {
       btnNewButton.setBounds(735, 320, 120, 28);
       contentPane.add(btnNewButton);
        
-      JButton btnNewButton_1 = new JButton("ID/PW \uCC3E\uAE30");
+      JButton btnNewButton_1 = new JButton("PW  \uCC3E\uAE30");
       btnNewButton_1.setBounds(669, 363, 120, 28);
       btnNewButton_1.setForeground(new Color(0, 0, 0));
       btnNewButton_1.setBackground(UIManager.getColor("Button.background"));
