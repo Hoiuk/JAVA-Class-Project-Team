@@ -1,0 +1,345 @@
+package Login;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JLabel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.JPasswordField;
+import javax.swing.JList;
+import javax.swing.JComboBox;
+import javax.swing.ButtonGroup;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.JCheckBox;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
+
+public class Login_New extends JFrame {
+
+	private JPanel contentPane;
+	private final JScrollPane scrollPane = new JScrollPane();
+	private JLabel lblNewLabel;
+	private JLabel lblNewLabel_1;
+	private JLabel lblNewLabel_2;
+	private JLabel label;
+	private JLabel lblEx;
+	private JLabel lblPw;
+	private JLabel lblPw_1;
+	private JTextField textField;
+	private JPasswordField passwordField;
+	private JPasswordField passwordField_1;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField textField_3;
+	private JTextField textField_4;
+	private JTextField textField_5;
+	private JTextField textField_6;
+	private JTextField textField_7;
+	private JLabel label_5;
+	private JTextField textField_8;
+	private JLabel label_6;
+	private JTextField textField_9;
+	private JLabel label_7;
+	private JTextField textField_10;
+	private JLabel label_8;
+	private JTextField textField_11;
+	private JLabel label_9;
+	private JTextField textField_12;
+	private JLabel lblNewLabel_7;
+	private JLabel label_10;
+	private JLabel lblNewLabel_8;
+	private JTextField textField_13;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Login_New frame = new Login_New();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public Login_New() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 1200, 700);         // frame 좌표 및 크기
+		contentPane = new JPanel();
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		scrollPane.setBounds(0, 0, 1180, 678);  // 스크롤로 보여지는 화면들
+		contentPane.add(scrollPane);
+		
+		JPanel panel = new JPanel();
+		Dimension size = new Dimension();
+		size.setSize(1200, 1700);               // 패널의 크기 (스크롤 보다 커야 스크롤 생김)
+		scrollPane.setViewportView(panel);
+		panel.setPreferredSize(size);
+		panel.setLayout(null);
+		
+		lblNewLabel = new JLabel("\uD559\uBC88");
+		lblNewLabel.setBounds(122, 77, 57, 15);
+		panel.add(lblNewLabel);
+		
+		lblNewLabel_1 = new JLabel("\uC774\uB984");
+		lblNewLabel_1.setBounds(122, 199, 57, 15);
+		panel.add(lblNewLabel_1);
+		
+		lblNewLabel_2 = new JLabel("\uC0DD\uB144\uC6D4\uC77C");
+		lblNewLabel_2.setBounds(110, 273, 57, 15);
+		panel.add(lblNewLabel_2);
+		
+		lblEx = new JLabel("ex)941218");
+		lblEx.setBounds(109, 288, 83, 15);
+		panel.add(lblEx);
+		
+		lblPw = new JLabel("PW");
+		lblPw.setBounds(122, 119, 57, 15);
+		panel.add(lblPw);
+		
+		lblPw_1 = new JLabel("PW \uD655\uC778");
+		lblPw_1.setBounds(122, 160, 57, 15);
+		panel.add(lblPw_1);
+		
+	
+		ButtonGroup grp = new ButtonGroup();
+		JRadioButton[] radioButton = new JRadioButton[2];
+		radioButton[0] = new JRadioButton("\uB0A8\uC790\r\n");
+		radioButton[0].setBounds(213, 235, 51, 23);
+		radioButton[1] = new JRadioButton("\uC5EC\uC790");
+		radioButton[1].setBounds(287, 235, 57, 23);
+		for(JRadioButton c : radioButton) {
+			grp.add(c);
+			panel.add(radioButton[0]);
+			panel.add(radioButton[1]);
+		}
+
+		
+		
+		JLabel lblNewLabel_3 = new JLabel("\uC774\uBA54\uC77C");
+		lblNewLabel_3.setBounds(116, 320, 57, 15);
+		panel.add(lblNewLabel_3);
+		
+		JLabel label_1 = new JLabel("\uD734\uB300\uC804\uD654\uBC88\uD638");
+		label_1.setBounds(98, 358, 95, 15);
+		panel.add(label_1);
+		
+		textField = new JTextField();
+		textField.setBounds(213, 75, 122, 21);
+		panel.add(textField);
+		textField.setColumns(10);
+		
+		passwordField = new JPasswordField();
+		passwordField.setBounds(213, 115, 122, 21);
+		panel.add(passwordField);
+		
+		passwordField_1 = new JPasswordField();
+		passwordField_1.setBounds(213, 155, 122, 21);
+		panel.add(passwordField_1);
+		
+		textField_1 = new JTextField();
+		textField_1.setColumns(10);
+		textField_1.setBounds(213, 195, 122, 21);
+		panel.add(textField_1);
+		
+		textField_2 = new JTextField();
+		textField_2.setColumns(10);
+		textField_2.setBounds(213, 275, 122, 21);
+		panel.add(textField_2);
+		
+		textField_3 = new JTextField();
+		textField_3.setColumns(10);
+		textField_3.setBounds(213, 315, 122, 21);
+		panel.add(textField_3);
+		
+		textField_4 = new JTextField();
+		textField_4.setColumns(10);
+		textField_4.setBounds(213, 355, 122, 21);
+		panel.add(textField_4);
+		
+		JLabel label_2 = new JLabel("@");
+		label_2.setBounds(347, 320, 22, 15);
+		panel.add(label_2);
+		
+		JComboBox comboBox = new JComboBox();
+		comboBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+					textField_13.setText((String)comboBox.getSelectedItem()); // 콤보박스 텍스트 가져오기
+				}
+		});
+		
+		
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"\uC9C1\uC811\uC785\uB825", "naver.com", "daum.net", "google.com", "cbnu.ac.kr"}));
+		comboBox.setBounds(501, 317, 116, 21);
+		panel.add(comboBox);
+		
+		JLabel lblNewLabel_4 = new JLabel("\uC124\uBB38\uC870\uC0AC");
+		lblNewLabel_4.setFont(new Font("휴먼둥근헤드라인", Font.PLAIN, 20));
+		lblNewLabel_4.setBounds(189, 412, 105, 23);
+		panel.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_5 = new JLabel("1. \uACE0\uB4F1\uD559\uAD50 \uC2DC\uC808\uC5D0 \uC7AC\uBC0C\uC5C8\uB358 \uACFC\uBAA9");
+		lblNewLabel_5.setBounds(27, 460, 228, 15);
+		panel.add(lblNewLabel_5);
+		
+		textField_5 = new JTextField();
+		textField_5.setBounds(41, 485, 494, 55);
+		panel.add(textField_5);
+		textField_5.setColumns(10);
+		
+		JLabel label_3 = new JLabel("2. \uC18C\uD504\uD2B8\uC6E8\uC5B4\uD559\uACFC\uC5D0 \uC628 \uC774\uC720");
+		label_3.setBounds(27, 565, 228, 15);
+		panel.add(label_3);
+		
+		textField_6 = new JTextField();
+		textField_6.setColumns(10);
+		textField_6.setBounds(41, 590, 494, 55);
+		panel.add(textField_6);
+		
+		JLabel label_4 = new JLabel("3. \uC7AC\uBC0C\uC5C8\uB358 \uACFC\uBAA9\uACFC \uADF8 \uC774\uC720");
+		label_4.setBounds(27, 670, 228, 15);
+		panel.add(label_4);
+		
+		textField_7 = new JTextField();
+		textField_7.setColumns(10);
+		textField_7.setBounds(41, 695, 494, 55);
+		panel.add(textField_7);
+		
+		label_5 = new JLabel("4. \uC7AC\uBBF8\uC5C6\uB294 \uACFC\uBAA9\uACFC \uADF8 \uC774\uC720");
+		label_5.setBounds(27, 775, 280, 15);
+		panel.add(label_5);
+		
+		textField_8 = new JTextField();
+		textField_8.setColumns(10);
+		textField_8.setBounds(41, 800, 494, 55);
+		panel.add(textField_8);
+		
+		label_6 = new JLabel("5. \uCDE8\uBBF8");
+		label_6.setBounds(27, 880, 228, 15);
+		panel.add(label_6);
+		
+		textField_9 = new JTextField();
+		textField_9.setColumns(10);
+		textField_9.setBounds(41, 905, 494, 55);
+		panel.add(textField_9);
+		
+		label_7 = new JLabel("6. \uC18C\uD504\uD2B8\uC6E8\uC5B4 \uAD00\uC2EC\uBD84\uC57C");
+		label_7.setBounds(27, 985, 228, 15);
+		panel.add(label_7);
+		
+		textField_10 = new JTextField();
+		textField_10.setColumns(10);
+		textField_10.setBounds(41, 1010, 494, 55);
+		panel.add(textField_10);
+		
+		label_8 = new JLabel("7. \uC18C\uC18D \uB3D9\uC544\uB9AC");
+		label_8.setBounds(27, 1095, 228, 15);
+		panel.add(label_8);
+		
+		textField_11 = new JTextField();
+		textField_11.setColumns(10);
+		textField_11.setBounds(41, 1120, 494, 55);
+		panel.add(textField_11);
+		
+		label_9 = new JLabel("8. \uAD00\uC2EC\uC788\uB294 \uC5B8\uC5B4");
+		label_9.setBounds(41, 1200, 228, 15);
+		panel.add(label_9);
+		
+		JCheckBox chckbxNewCheckBox = new JCheckBox("C");
+		chckbxNewCheckBox.setBounds(27, 1225, 115, 23);
+		panel.add(chckbxNewCheckBox);
+		
+		JCheckBox chckbxC = new JCheckBox("C++");
+		chckbxC.setBounds(140, 1225, 115, 23);
+		panel.add(chckbxC);
+		
+		JCheckBox chckbxC_1 = new JCheckBox("C#");
+		chckbxC_1.setBounds(259, 1225, 115, 23);
+		panel.add(chckbxC_1);
+		
+		JCheckBox chckbxJava = new JCheckBox("JAVA");
+		chckbxJava.setBounds(374, 1225, 115, 23);
+		panel.add(chckbxJava);
+		
+		JCheckBox chckbxPython = new JCheckBox("Python");
+		chckbxPython.setBounds(27, 1255, 115, 23);
+		panel.add(chckbxPython);
+		
+		JCheckBox chckbxHtml = new JCheckBox("Html");
+		chckbxHtml.setBounds(140, 1255, 115, 23);
+		panel.add(chckbxHtml);
+		
+		JCheckBox chckbxJavaScript = new JCheckBox("Java Script");
+		chckbxJavaScript.setBounds(259, 1255, 115, 23);
+		panel.add(chckbxJavaScript);
+		
+		JCheckBox chckbxPhp = new JCheckBox("PHP");
+		chckbxPhp.setBounds(374, 1255, 115, 23);
+		panel.add(chckbxPhp);
+		
+		textField_12 = new JTextField();
+		textField_12.setBounds(96, 1295, 179, 23);
+		panel.add(textField_12);
+		textField_12.setColumns(10);
+		
+		JLabel lblNewLabel_6 = new JLabel("\uAE30\uD0C0");
+		lblNewLabel_6.setBounds(40, 1295, 57, 15);
+		panel.add(lblNewLabel_6);
+		
+		JButton btnNewButton = new JButton("\uD655\uC778");
+		btnNewButton.setBounds(219, 1485, 129, 44);
+		panel.add(btnNewButton);
+		
+		JButton button = new JButton("\uCDE8\uC18C");
+		button.setBounds(406, 1485, 129, 44);
+		panel.add(button);
+		
+		lblNewLabel_7 = new JLabel("\uD68C\uC6D0\uAC00\uC785");
+		lblNewLabel_7.setFont(new Font("휴먼둥근헤드라인", Font.PLAIN, 20));
+		lblNewLabel_7.setBounds(189, 24, 105, 30);
+		panel.add(lblNewLabel_7);
+		
+		label_10 = new JLabel("\uC131\uBCC4");
+		label_10.setBounds(122, 239, 57, 15);
+		panel.add(label_10);
+		
+		lblNewLabel_8 = new JLabel("'-'\uBE7C\uACE0 \uC22B\uC790\uB9CC \uC785\uB825");
+		lblNewLabel_8.setBounds(349, 358, 122, 15);
+		panel.add(lblNewLabel_8);
+		
+		textField_13 = new JTextField();
+		textField_13.setColumns(10);
+		textField_13.setBounds(367, 317, 122, 21);
+		panel.add(textField_13);
+	
+		
+		/*		JScrollPane jScrollPane = new JScrollPane();
+		JPanel panel_ex = new JPanel();
+		Dimension size = new Dimension();
+		size.setSize(1000,1000);
+		panel_ex.setPreferredSize(size);
+		jScrollPane.setViewportView(panel_ex);*/
+		
+	}
+}
