@@ -21,8 +21,6 @@ import java.awt.Font;
 public class Login_Search extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField textField;
-	private JTextField textField_1;
 	private JTextField textField_2;
 	private JTextField textField_3;
 	private JTextField textField_4;
@@ -54,37 +52,14 @@ public class Login_Search extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("ID\uCC3E\uAE30");
-		lblNewLabel.setFont(new Font("맑은 고딕 Semilight", Font.BOLD, 14));
-		lblNewLabel.setBounds(27, 15, 67, 49);
-		contentPane.add(lblNewLabel);
-		
 		JLabel label = new JLabel("\uBE44\uBC00\uBC88\uD638 \uCC3E\uAE30");
 		label.setFont(new Font("맑은 고딕 Semilight", Font.BOLD, 15));
-		label.setBounds(12, 226, 101, 42);
+		label.setBounds(145, 20, 101, 42);
 		contentPane.add(label);
 		
-		JLabel lblNewLabel_1 = new JLabel("\uC774\uB984");
-		lblNewLabel_1.setBounds(167, 32, 57, 15);
-		contentPane.add(lblNewLabel_1);
-		
-		JLabel lblex = new JLabel("\uC0DD\uB144\uC6D4\uC77C");
-		lblex.setBounds(156, 65, 67, 15);
-		contentPane.add(lblex);
-		
 		JLabel label_1 = new JLabel("\uC9C0\uB3C4\uAD50\uC218");
-		label_1.setBounds(156, 117, 57, 15);
+		label_1.setBounds(70, 209, 57, 15);
 		contentPane.add(label_1);
-		
-		textField = new JTextField();
-		textField.setBounds(258, 29, 116, 21);
-		contentPane.add(textField);
-		textField.setColumns(10);
-		
-		textField_1 = new JTextField();
-		textField_1.setBounds(258, 65, 116, 21);
-		contentPane.add(textField_1);
-		textField_1.setColumns(10);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.addActionListener(new ActionListener() {
@@ -92,64 +67,52 @@ public class Login_Search extends JFrame {
 			}
 		});
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"\uC804\uC911\uB0A8\uAD50\uC218\uB2D8", "\uC774\uAC74\uBA85\uAD50\uC218\uB2D8", "\uAE40\uBA85\uC900\uAD50\uC218\uB2D8", "\uC774\uC0C1\uD638\uAD50\uC218\uB2D8", "\uB958\uADFC\uD638\uAD50\uC218\uB2D8", "\uD64D\uC7A5\uC758\uAD50\uC218\uB2D8", "\uCD5C\uACBD\uC8FC\uAD50\uC218\uB2D8", "\uB958\uAD00\uD76C\uAD50\uC218\uB2D8", "\uC774\uC7AC\uC131\uAD50\uC218\uB2D8", "\uC774\uC885\uC5F0\uAD50\uC218\uB2D8", "\uC774\uC740\uC9C0\uAD50\uC218\uB2D8", "\uC544\uC9C0\uC988\uAD50\uC218\uB2D8"}));
-		comboBox.setBounds(258, 112, 118, 21);
+		comboBox.setBounds(195, 206, 118, 21);
 		contentPane.add(comboBox);
 		
-		JButton btnNewButton = new JButton("\uD655\uC778");
-		btnNewButton.setBounds(142, 163, 79, 23);
-		contentPane.add(btnNewButton);
-		
 		JLabel label_2 = new JLabel("\uC774\uB984");
-		label_2.setBounds(169, 242, 57, 15);
+		label_2.setBounds(80, 115, 57, 15);
 		contentPane.add(label_2);
 		
-		JLabel label_3 = new JLabel("\uC544\uC774\uB514");
-		label_3.setBounds(163, 275, 57, 15);
+		JLabel label_3 = new JLabel("\uD559\uBC88");
+		label_3.setBounds(80, 162, 57, 15);
 		contentPane.add(label_3);
 		
 		JLabel label_4 = new JLabel("\uC9C8\uBB38");
-		label_4.setBounds(169, 315, 57, 15);
+		label_4.setBounds(80, 255, 57, 15);
 		contentPane.add(label_4);
 		
 		JLabel lblNewLabel_2 = new JLabel("\uB2F5");
-		lblNewLabel_2.setBounds(174, 358, 57, 15);
+		lblNewLabel_2.setBounds(82, 302, 57, 15);
 		contentPane.add(lblNewLabel_2);
 		
 		JComboBox comboBox_1 = new JComboBox();
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"   \uB098\uC758 \uBCF4\uBB3C \uC81C 1\uD638\uB294?", "   \uB098\uC758 \uAC00\uC7A5 \uCE5C\uD55C \uCE5C\uAD6C\uB294?", "   \uB0B4\uAC00 \uAC00\uC7A5 \uC88B\uC544\uD558\uB294 \uACFC\uC77C\uC740?", "   \uB0B4\uAC00 \uAC00\uC7A5 \uC88B\uC544\uD558\uB294 \uB3D9\uBB3C\uC740?", "   \uB098\uC758 \uD608\uC561\uD615\uC740?", "   \uAC00\uC7A5 \uC88B\uC544\uD558\uB294 \uAD50\uC218\uB2D8\uC740?"}));
-		comboBox_1.setBounds(232, 312, 190, 21);
+		comboBox_1.setBounds(172, 252, 190, 21);
 		contentPane.add(comboBox_1);
-		
-		JButton button = new JButton("\uCDE8\uC18C");
-		button.setBounds(268, 163, 82, 23);
-		contentPane.add(button);
 		
 		textField_2 = new JTextField();
 		textField_2.setColumns(10);
-		textField_2.setBounds(258, 356, 116, 21);
+		textField_2.setBounds(195, 299, 116, 21);
 		contentPane.add(textField_2);
 		
 		textField_3 = new JTextField();
 		textField_3.setColumns(10);
-		textField_3.setBounds(258, 233, 116, 21);
+		textField_3.setBounds(195, 109, 116, 21);
 		contentPane.add(textField_3);
 		
 		textField_4 = new JTextField();
 		textField_4.setColumns(10);
-		textField_4.setBounds(258, 273, 116, 21);
+		textField_4.setBounds(195, 159, 116, 21);
 		contentPane.add(textField_4);
 		
 		JButton button_1 = new JButton("\uD655\uC778");
-		button_1.setBounds(142, 403, 79, 23);
+		button_1.setBounds(95, 387, 79, 23);
 		contentPane.add(button_1);
 		
 		JButton button_2 = new JButton("\uCDE8\uC18C");
-		button_2.setBounds(268, 403, 82, 23);
+		button_2.setBounds(231, 387, 82, 23);
 		contentPane.add(button_2);
-		
-		JLabel lblex_1 = new JLabel("(ex:941218)");
-		lblex_1.setBounds(150, 82, 91, 18);
-		contentPane.add(lblex_1);
 		
 		
 	}
