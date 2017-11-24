@@ -1,0 +1,205 @@
+package Professor;
+
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import Student.Stu_Menu;
+
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.awt.Cursor;
+
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.ActionEvent;
+
+public class Pro_Menu extends JFrame {
+
+   private JPanel contentPane;
+   private ImageIcon buttonenterImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu1_enter.JPG");
+   private ImageIcon buttonImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu1.JPG");
+   private ImageIcon button1enterImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu2_enter.JPG");
+   private ImageIcon button1Image = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu2.JPG");
+   private ImageIcon button2enterImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu3_enter.JPG");
+   private ImageIcon button2Image = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu3.JPG");
+   private ImageIcon button3enterImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu4_enter.JPG");
+   private ImageIcon button3Image = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu4.JPG");
+   private ImageIcon button4enterImage = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu5_enter.JPG");
+   private ImageIcon button4Image = new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu5.JPG");
+
+
+   /**
+    * Launch the application.
+    */
+   public static void main(String[] args) {
+      EventQueue.invokeLater(new Runnable() {
+         public void run() {
+            try {
+               Pro_Menu frame = new Pro_Menu();
+               frame.setVisible(true);
+            } catch (Exception e) {
+               e.printStackTrace();
+            }
+         }
+      });
+   }
+
+   /**
+    * Create the frame.
+    */
+   public Pro_Menu() {
+      setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      setBounds(100, 100, 1520, 920);
+      contentPane = new JPanel();
+      contentPane.setBackground(Color.WHITE);
+      contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+      setContentPane(contentPane);
+      contentPane.setLayout(null);
+      
+      JButton button_2 = new JButton("");
+      button_2.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+         }
+      });
+      
+      
+      JButton button_1 = new JButton("");
+      button_1.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+            
+         }
+      });
+      
+      JButton button_3 = new JButton("");
+      button_3.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+         }
+      });
+      
+      JButton button_4 = new JButton("");
+      button_4.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent e) {
+         }
+      });
+      
+      JButton button = new JButton("");
+      button.addActionListener(new ActionListener() {
+         public void actionPerformed(ActionEvent arg0) {
+         }
+      });
+      
+      JLabel label = new JLabel("");
+      label.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\UTalk(always).JPG"));
+      label.setBounds(0, 0, 114, 46);
+      contentPane.add(label);
+      
+      button.setForeground(Color.WHITE);
+      button.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu1.JPG"));
+      button.setBounds(566, 50, 414, 138);
+      button.setBorderPainted(false);
+      button.setContentAreaFilled(false);
+      button.setFocusPainted(false);
+      contentPane.add(button);
+      
+      button.addMouseListener(new MouseAdapter() {
+         @Override
+         public void mouseEntered(MouseEvent e) {
+            button.setIcon(buttonenterImage);
+            button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+         }
+         public void mouseExited(MouseEvent e) {
+            button.setIcon(buttonImage);
+            button.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+         }
+      });
+      
+      button_1.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu2.JPG"));
+      button_1.setForeground(Color.WHITE);
+      button_1.setFocusPainted(false);
+      button_1.setContentAreaFilled(false);
+      button_1.setBorderPainted(false);
+      button_1.setBounds(566, 180, 414, 138);
+      contentPane.add(button_1);
+      
+      button_1.addMouseListener(new MouseAdapter() {
+         @Override
+         public void mouseEntered(MouseEvent e) {
+            button_1.setIcon(button1enterImage);
+            button_1.setCursor(new Cursor(Cursor.HAND_CURSOR));
+         }
+         public void mouseExited(MouseEvent e) {
+            button_1.setIcon(button1Image);
+            button_1.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+         }
+      });
+      
+      button_2.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu3.JPG"));
+      button_2.setForeground(Color.WHITE);
+      button_2.setFocusPainted(false);
+      button_2.setContentAreaFilled(false);
+      button_2.setBorderPainted(false);
+      button_2.setBounds(566, 310, 414, 138);
+      contentPane.add(button_2);
+      
+      button_2.addMouseListener(new MouseAdapter() {
+         @Override
+         public void mouseEntered(MouseEvent e) {
+            button_2.setIcon(button2enterImage);
+            button_2.setCursor(new Cursor(Cursor.HAND_CURSOR));
+         }
+         public void mouseExited(MouseEvent e) {
+            button_2.setIcon(button2Image);
+            button_2.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+         }
+      });
+      
+      button_3.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu4.JPG"));
+      button_3.setForeground(Color.WHITE);
+      button_3.setFocusPainted(false);
+      button_3.setContentAreaFilled(false);
+      button_3.setBorderPainted(false);
+      button_3.setBounds(566, 440, 414, 138);
+      contentPane.add(button_3);
+      
+      button_3.addMouseListener(new MouseAdapter() {
+         @Override
+         public void mouseEntered(MouseEvent e) {
+            button_3.setIcon(button3enterImage);
+            button_3.setCursor(new Cursor(Cursor.HAND_CURSOR));
+         }
+         public void mouseExited(MouseEvent e) {
+            button_3.setIcon(button3Image);
+            button_3.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+         }
+      });
+      
+      button_4.setIcon(new ImageIcon("C:\\Users\\Kang\\Desktop\\F_Project\\F_Project\\src\\Images\\Pro_Menu5.JPG"));
+      button_4.setForeground(Color.WHITE);
+      button_4.setFocusPainted(false);
+      button_4.setContentAreaFilled(false);
+      button_4.setBorderPainted(false);
+      button_4.setBounds(566, 570, 414, 138);
+      contentPane.add(button_4);
+      
+      button_4.addMouseListener(new MouseAdapter() {
+         @Override
+         public void mouseEntered(MouseEvent e) {
+            button_4.setIcon(button4enterImage);
+            button_4.setCursor(new Cursor(Cursor.HAND_CURSOR));
+         }
+         public void mouseExited(MouseEvent e) {
+            button_4.setIcon(button4Image);
+            button_4.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+         }
+      });
+      
+      
+   }
+}
